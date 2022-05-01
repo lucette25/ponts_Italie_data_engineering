@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
-import sqlalchemy
 
 html_text = requests.get('https://fr.wikipedia.org/wiki/Liste_de_ponts_d%27Italie').text
 soup = BeautifulSoup(html_text, "html.parser")
