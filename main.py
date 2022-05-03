@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #from storage import toDataBase
 from flask import Flask,jsonify,request
-import psycopg2
+import psycopg2,os
 
 #toDataBase()
 
@@ -72,7 +72,9 @@ def getByCity(city_name):
         cur.close()
 
 
+port2 = int(os.environ.get('PORT', 5000))
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
-    app.run(threaded=True, port=5000)
+    app.run(threaded=True, port=port2)
+
