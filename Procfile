@@ -1,1 +1,1 @@
-web :storage.py
+worker: python storage.py
