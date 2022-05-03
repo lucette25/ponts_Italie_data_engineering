@@ -1,3 +1,7 @@
-requests==0.11.1
+beautifulsoup4==4.11.1
+Flask==2.1.2
+pandas==1.4.2
+psycopg2==2.9.3
+psycopg2_binary==2.9.3
+requests==2.27.1
 SQLAlchemy==1.4.36
-pandas===1.4.2
