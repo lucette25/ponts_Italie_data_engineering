@@ -5,6 +5,9 @@ import psycopg2,os
 
 #toDataBase()
 
+app = Flask(__name__)
+
+
 DATABASE_URL = 'postgres://ywczmgutsqcrov:8f83bb47c1a0d3f90db7e004786505cdde184c1ffc95ac855bdc7a4b11d531a7@ec2-3-217-113-25.compute-1.amazonaws.com:5432/d52673l1t0ik3a'
 
 # create a new database connection by calling the connect() function
@@ -13,7 +16,7 @@ print(con)
 
 
 
-app = Flask(__name__)
+
 
 @app.route("/", methods=['GET'])
 
