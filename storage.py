@@ -1,4 +1,4 @@
-from getData import getData
+from ponts_Italie_data_engineering.getData import getData
 import sqlalchemy
 
 
