@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from storage import toDataBase
+#from storage import toDataBase
 from flask import Flask,jsonify,request
 import psycopg2
 
-toDataBase()
+#toDataBase()
 
 DATABASE_URL = 'postgres://ywczmgutsqcrov:8f83bb47c1a0d3f90db7e004786505cdde184c1ffc95ac855bdc7a4b11d531a7@ec2-3-217-113-25.compute-1.amazonaws.com:5432/d52673l1t0ik3a'
 
@@ -73,5 +73,3 @@ def getByCity(city_name):
 
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
