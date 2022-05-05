@@ -1,4 +1,4 @@
-from ponts_Italie_data_engineering.getData import getData
+from getData import getData
 import sqlalchemy
 
 
@@ -9,5 +9,5 @@ def toDataBase():
     data.to_sql('ponts_table', engine, if_exists='replace')
 
 
-
+toDataBase()
 
