@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from storage import toDataBase
+#from storage import toDataBase
 from flask import Flask,jsonify,request
 import psycopg2,os
 
-toDataBase()
+#toDataBase()
 
 app = Flask(__name__)
 
